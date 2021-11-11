@@ -3,3 +3,4 @@ const div2 = document.querySelector("body > footer > div.footer-top > div > div 
 div1.after(div2)
 div2.style['text-align'] = 'center';
 div2.style['padding-bottom'] = '20px';
+div2.style['float'] = 'right';
