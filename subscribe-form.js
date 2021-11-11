@@ -15,5 +15,9 @@ submit.setAttribute('value', "submit");
 
 form.appendChild(email);
 form.appendChild(submit);
+var form_medium = document.querySelector("body > main > main > div > div > div > div");
 
-document.body.appendChild(form);
+if (form_medium) {
+    form_medium.parentElement.insertBefore(form, form_medium.nextSibling)
+}
+//document.body.appendChild(form);
