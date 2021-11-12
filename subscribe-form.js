@@ -18,7 +18,13 @@
             const submit = document.createElement("input");
             submit.setAttribute('type', "submit");
             submit.setAttribute('value', "submit");
-            submit.setAttribute('class', "btn")
+            submit.setAttribute('class', "btn newsletter-button g-recaptcha");
+            submit.setAttribute('data-sitekey', "6LcHb_4ZAAAAAAHjKYcRqvvqJO53xoEOEO2u0g2T");
+            submit.setAttribute('data-callback', "newsletterSubscribe_5969");
+            submit.setAttribute('data-action', "newsletterSubscribe");
+            submit.setAttribute('data-item', "button");
+            
+            
             
             form.appendChild(email);
             form.appendChild(submit);
