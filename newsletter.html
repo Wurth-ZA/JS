@@ -1,0 +1,50 @@
+
+    <div class="container newsletter" style="">
+        <div class="row">
+            <div class="col-md-12">
+    
+    <div class="container newsletter-container" style="color:#000;">
+        <div class="row">
+            <div class="col-md-12">
+        <h2 class="" style="text-align:center;"><span style="color:#000">Signup for our VIP newsletter to get updates for</span><strong><span style="color:#c0392b"> Black Week</span></strong></h2>
+    
+        <script>
+            const form = document.createElement("form");
+            form.setAttribute('action', "/wurth/newsletter/subscribe");
+            form.setAttribute('method', "post");
+            form.setAttribute('class', "contenteddietor-newslettersubscribe form-horizontal");
+            
+            const email = document.createElement("input");
+            email.setAttribute('type', "text");
+            email.setAttribute('name', "email");
+            email.setAttribute('data-item', "email");
+            email.setAttribute('placeholder', "Email Address");
+            email.setAttribute('class', "form-control newsletter-control");
+            email.setAttribute('placeholder', "Email Address");
+            email.setAttribute('autocomplete', "off");
+            email.setAttribute('data-validate', "true");
+            email.setAttribute('data-validate-required', "true");
+            email.setAttribute('data-validate-email', "true");
+            
+            const submit = document.createElement("input");
+            submit.setAttribute('type', "submit");
+            submit.setAttribute('value', "submit");
+            submit.setAttribute('class', "btn")
+            
+            form.appendChild(email);
+            form.appendChild(submit);
+            var form_medium = document.querySelector("body > main > main > div > div > div > div");
+            
+            if (form_medium) {
+                form_medium.parentElement.insertBefore(form, form_medium.nextSibling)
+            }
+            </script>
+    <script src="/scss/themes/wurth/scripts/newsletter.js" defer=""></script>
+        
+            </div>
+        </div>
+    </div>		</div>
+        </div>
+    </div>
+
+ 
