@@ -1,10 +1,14 @@
             const form = document.createElement("form");
             form.setAttribute('action', "/wurth/newsletter/subscribe");
             form.setAttribute('method', "post");
-            form.setAttribute('class', "contenteddietor-newslettersubscribe form-horizontal");
+            form.setAttribute('class', "container newsletter-container contenteddietor-newslettersubscribe form-horizontal");
+            form.setAttribute('id', "form_686c9380-6df1-452b-a97f-a4090e1e9d8a");
+            form.setAttribute('onsubmit', "return NewsletterSubscribe.Actions.Submit($(this), '686c9380-6df1-452b-a97f-a4090e1e9d8a");
+
             
             const email = document.createElement("input");
             email.setAttribute('type', "text");
+            email.setAttribute('id', "email");
             email.setAttribute('name', "email");
             email.setAttribute('data-item', "email");
             email.setAttribute('placeholder', "Email Address");
@@ -23,6 +27,7 @@
             submit.setAttribute('data-callback', "newsletterSubscribe_5969");
             submit.setAttribute('data-action', "newsletterSubscribe");
             submit.setAttribute('data-item', "button");
+            submit.setAttribute('style', "display:inline; float:right");
             
             
             
@@ -32,5 +37,5 @@
             
             if (form_medium) {
                 form_medium.parentElement.insertBefore(form, form_medium.nextSibling)
-            }
+            } 
 //document.body.appendChild(form);
