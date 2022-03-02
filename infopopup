@@ -1,0 +1,32 @@
+<style>
+  .information {
+  margin: 20px 0;
+  float: right;
+  background: white;
+  width: 320px;
+  position: relative;
+  border-radius: 3px;
+  padding: 20px;
+}
+.information:after {
+  bottom: 100%;
+  left: 89%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-bottom-color: white;
+  border-width: 8px;
+  margin-left: -8px;
+}
+ </style>
+
+var text = document.createElement('div');
+text.setAttribute('class',"information");
+text.innerText = "Testing pop-up";
+
+var information = document.querySelector("#headerSearch > div > div > div.col");
+
+information.appendChild(text);
